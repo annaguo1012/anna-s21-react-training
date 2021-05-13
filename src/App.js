@@ -2,15 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const midnightSnack = "cereal";
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>{function(out) {return out;}(midnightSnack)}</h1>
+        <h1>{favoriteFood()}</h1>
       </header>
     </div>
   );
 }
 
+const favoriteFood = () => {
+  return "cereal";
+}
 export default App;
